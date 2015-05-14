@@ -34,9 +34,9 @@ for item in onlyfiles:
         result = "ERROR:TC EMPTY"
     else:    
         try:
-            f.seek(-50000, 2)			
-            targetline= f.readline()
-            while "Result Start" not in targetline:
+            #f.seek(-50000, 2)			
+            targetline= ""
+            while "- Result Start -" not in targetline:
                 targetline = f.readline()
             fail_count_str_1 = f.readline()
             fail_count_str_2 = f.readline()
